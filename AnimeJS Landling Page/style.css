@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    overflow-x: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ff7878;
+    color: #ffffff;
+    padding: 6px;
+    font-size: 12px;
+    text-align: center;
+}
+header nav{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    transition: all ease 0.5s;
+}
+header ul, header .logo{
+   width: 33%;
+}
+header.logo{
+   text-align: center;
+}
+header ul li{
+   list-style: none;
+   display: inline-block;
+}
+header ul li a{
+   text-decoration: none;
+   color: #ffffff;
+   font-size: 16px;
+   font-weight: 300;
+   margin: 0 20px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+.banner{
+   position: relative;
+   height: 750px;
+   background: url(./final.jpg) no-repeat;
+   background-size: cover;
+}
+.banner-text{
+   position: relative;
+   text-align: center;
+   padding-top: 300px;
+   color: #ffffff;
+   z-index: 9;
+}
+.banner-text h1{
+   font-size: 60px;
+   font-weight: 400;
+}
+.banner-text h6{
+   font-size: 16px;
+   font-weight: 400;
+   letter-spacing: 6px;
+   margin-bottom: 10px;
+}
+.scrolldown{
+   display: block;
+   margin-top: 220px;
+}
+.slide-thumb{
+   position: absolute;
+   top: 170px;
+   right: 135px;
+   z-index: 1;
+}
+.logo-section{
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 50px 0;
+}
+.intro-slide{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff30;
+   z-index: 99;
+}
+header.sticky nav{
+   position: fixed;
+   top: 0;
+}
